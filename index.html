@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - [Your Name]</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="hero" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">[Your Name]</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section position-relative">
+      <div class="overlay"></div>
+      <div class="container text-center position-relative">
+        <h1 class="display-4 fw-bold text-shadow">
+          Hi, I'm <span class="text-highlight">[Your Name]</span>
+        </h1>
+        <p class="lead mt-3">
+          A <span class="text-highlight">Professional Software Developer</span> passionate
+          about innovation and problem-solving.
+        </p>
+        <div class="mt-4">
+          <a href="#about" class="btn btn-primary btn-lg btn-animate">About Me</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg btn-animate"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#skills-section" class="text-white">
+          <i class="fas fa-chevron-down fa-2x"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="skills-section py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">My Expertise</h2>
+        <div class="row g-4">
+          <!-- Skill Card 1 -->
+          <div class="col-md-4">
+            <div class="skill-card text-center p-4 shadow-sm border-0">
+              <div class="icon-container mb-3">
+                <i class="fas fa-code fa-3x text-primary"></i>
+              </div>
+              <h5 class="fw-bold">Web Development</h5>
+              <p class="text-muted">
+                Designing and developing modern, responsive websites with user-friendly
+                interfaces.
+              </p>
+            </div>
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="col-md-4">
+            <div class="skill-card text-center p-4 shadow-sm border-0">
+              <div class="icon-container mb-3">
+                <i class="fas fa-robot fa-3x text-success"></i>
+              </div>
+              <h5 class="fw-bold">Automation</h5>
+              <p class="text-muted">
+                Specializing in automating workflows using tools like Selenium and Appium.
+              </p>
+            </div>
+          </div>
+          <!-- Skill Card 3 -->
+          <div class="col-md-4">
+            <div class="skill-card text-center p-4 shadow-sm border-0">
+              <div class="icon-container mb-3">
+                <i class="fas fa-microchip fa-3x text-danger"></i>
+              </div>
+              <h5 class="fw-bold">IoT Solutions</h5>
+              <p class="text-muted">
+                Creating smart home systems and IoT solutions for modern living.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Card Container -->
+          <div class="col-lg-12">
+            <div class="card shadow-lg border-0 rounded-4">
+              <div class="card-body d-flex flex-column flex-lg-row">
+                <!-- Left Column: Image + Personal Details -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="css/images/profile.jpg"
+                    alt="Profile Picture"
+                    class="about-image img-fluid rounded-3 shadow"
+                  />
+                  <!-- <div class="personal-details mt-3"> -->
+                  <ul class="list-unstyled mt-4">
+                    <li><strong>Name:</strong> John Doe</li>
+                    <li><strong>Profession:</strong> Software Developer</li>
+                    <li><strong>Email:</strong> johndoe@example.com</li>
+                    <li><strong>Phone:</strong> +123 456 7890</li>
+                    <li><strong>Location:</strong> Surabaya, Indonesia</li>
+                  </ul>
+                  <!-- </div> -->
+                </div>
+
+                <!-- Right Column: About Content -->
+                <div class="col-lg-8">
+                  <h2 class="section-title mb-4">About Me</h2>
+                  <p class="text-muted">
+                    Hello! I'm a passionate <strong>Software Developer</strong> with
+                    expertise in creating efficient and innovative solutions. With a
+                    background in <strong>informatics engineering</strong>, I specialize
+                    in web development, automation testing, and IoT systems.
+                  </p>
+                  <p>
+                    Driven by curiosity and problem-solving, I love bringing ideas to life
+                    through technology. My goal is to deliver modern, functional, and
+                    user-friendly software that impacts the world positively.
+                  </p>
+                  <ul class="about-skills-list">
+                    <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+                    <li>Automation Testing (Selenium, Appium, Node.js)</li>
+                    <li>IoT Projects & Smart Home Integration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume-section" class="resume-section py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">My Resume</h2>
+
+        <!-- Summary Section -->
+        <div class="summary-section bg-light p-4 rounded shadow-sm mb-5">
+          <h4 class="fw-bold">Professional Summary</h4>
+          <p class="text-muted mb-0">
+            A dedicated and detail-oriented software developer with over 3 years of
+            experience in web development, automation, and IoT solutions. Proficient in
+            creating responsive, user-friendly interfaces and delivering efficient
+            software solutions. Passionate about solving real-world problems with
+            innovative technology.
+          </p>
+        </div>
+
+        <!-- Skills Highlights -->
+        <div class="skills-section bg-light p-4 rounded shadow-sm mb-5">
+          <h4 class="fw-bold">Skills Highlight</h4>
+          <ul class="skills-list">
+            <li>
+              <i class="fa fas fa-code-slash"></i> Full-stack Web Development (HTML, CSS,
+              JS, Node.js)
+            </li>
+            <li><i class="fa fas fa-cpu"></i> Automation Testing (Selenium, Appium)</li>
+            <li>
+              <i class="fa fas fa-brightness-alt-high"></i> IoT Development (MQTT, Smart
+              Home)
+            </li>
+            <li><i class="fa fas fa-puzzle"></i> Problem Solving & Debugging</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <!-- Left Column (Education) -->
+          <div class="col-md-6">
+            <h4 class="section-title mb-4">Education</h4>
+            <div class="resume-item mb-4 position-relative">
+              <div class="icon-box">
+                <i class="fa fas fa-mortarboard"></i>
+              </div>
+              <h5 class="fw-bold">Informatics Engineering</h5>
+              <p class="text-muted mb-1">
+                Politeknik Elektronika Negeri Surabaya (PENS) | 2020 - 2024
+              </p>
+              <p>Focused on software development, automation, and IoT technologies.</p>
+            </div>
+            <div class="resume-item mb-4 position-relative">
+              <div class="icon-box">
+                <i class="fa fas fa-book"></i>
+              </div>
+              <h5 class="fw-bold">High School Diploma</h5>
+              <p class="text-muted mb-1">SMK Kesehatan | 2017 - 2020</p>
+              <p>
+                Studied vocational health with a focus on teamwork and analytical
+                thinking.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column (Professional Experience) -->
+          <div class="col-md-6">
+            <h4 class="section-title mb-4">Professional Experience</h4>
+            <div class="resume-item mb-4 position-relative">
+              <div class="icon-box">
+                <i class="fa fas fa-briefcase"></i>
+              </div>
+              <h5 class="fw-bold">Software Developer</h5>
+              <p class="text-muted mb-1">Freelance | 2021 - Present</p>
+              <p>
+                Developed modern, responsive websites and automated testing solutions
+                using Selenium and Appium.
+              </p>
+            </div>
+            <div class="resume-item mb-4 position-relative">
+              <div class="icon-box">
+                <i class="fa fas fa-wrench"></i>
+              </div>
+              <h5 class="fw-bold">IoT Specialist Intern</h5>
+              <p class="text-muted mb-1">Startup XYZ | 2022</p>
+              <p>
+                Worked on smart home automation projects using Node.js and MQTT protocols.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="card border-0 rounded-4 p-4">
+          <div class="row align-items-center">
+            <!-- Contact Form -->
+            <div class="col-md-6 pe-md-4">
+              <h2 class="section-title mb-4 text-center text-md-start">Contact Me</h2>
+              <form action="#" method="POST" class="contact-form">
+                <div class="form-group mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Write your message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="col-md-6 ps-md-4 text-center">
+              <h2 class="section-title mb-4">Find Me On</h2>
+              <div class="social-icons d-flex justify-content-center">
+                <a href="mailto:johndoe@example.com" class="social-link mx-3">
+                  <i class="fas fa-envelope"></i>
+                  <p>Email</p>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="social-link mx-3">
+                  <i class="fab fa-whatsapp"></i>
+                  <p>WhatsApp</p>
+                </a>
+                <a href="https://www.instagram.com/johndoe" target="_blank" class="social-link mx-3">
+                  <i class="fab fa-instagram"></i>
+                  <p>Instagram</p>
+                </a>
+              </div>
+              <p class="text-muted mt-4">
+                Let’s connect! Feel free to reach out anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+      <p class="mb-0">© 2024 Wildan | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
