@@ -5,6 +5,64 @@ body {
     color: #333;
 }
 
+/* General Navbar Styling */
+.navbar {
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Social Media Buttons */
+.navbar .btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sticky Navbar on Scroll */
+.navbar.sticky-top {
+    background-color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar .btn-outline-light {
+        margin: 5px 0;
+    }
+}
+
+
 /* Hero Section */
 .hero-section {
     height: 90vh;
@@ -72,9 +130,12 @@ body {
 
 /* Keyframes for bounce animation */
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -118,25 +179,18 @@ body {
 }
 
 .resume-section h2 {
-    color: #0d6efd;
+    color: #333;
     position: relative;
 }
 
 .resume-section h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 100px;
     height: 4px;
     background: #0d6efd;
     margin: 10px auto 30px;
-    border-radius: 2px;
-}
-
-.section-title {
-    color: #333;
-    border-bottom: 2px solid #0d6efd;
-    display: inline-block;
-    padding-bottom: 5px;
+    /* border-radius: 2px; */
 }
 
 /* Summary Section */
@@ -213,6 +267,7 @@ body {
     .resume-section .row {
         flex-direction: column;
     }
+
     .resume-section .col-md-6 {
         margin-bottom: 20px;
     }
@@ -225,6 +280,7 @@ body {
     .resume-section .row {
         flex-direction: column;
     }
+
     .resume-section .col-md-6 {
         margin-bottom: 20px;
     }
@@ -338,24 +394,24 @@ body {
 .contact-section {
     background: linear-gradient(135deg, #dde7f1, #ffffff);
     padding: 60px 0;
-  }
-  
-  .card {
+}
+
+.card {
     border: none;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
     position: relative;
-  }
-  
-  .section-title::after {
+}
+
+/* .section-title::after {
     content: "";
     display: block;
     width: 50px;
@@ -367,57 +423,57 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .social-icons {
+} */
+
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .social-link {
+}
+
+.social-link {
     text-decoration: none;
     text-align: center;
     color: #333;
     transition: all 0.3s ease;
-  }
-  
-  .social-link:hover {
+}
+
+.social-link:hover {
     transform: scale(1.1);
     color: #007bff;
-  }
-  
-  .social-link i {
+}
+
+.social-link i {
     font-size: 2rem;
     margin-bottom: 8px;
-  }
-  
-  .social-link p {
+}
+
+.social-link p {
     margin: 0;
     font-size: 1rem;
     font-weight: 500;
-  }
-  
-  /* Form Styling */
-  .contact-form .form-label {
+}
+
+/* Form Styling */
+.contact-form .form-label {
     font-weight: bold;
     color: #333;
-  }
-  
-  .contact-form .form-control {
+}
+
+.contact-form .form-control {
     border-radius: 8px;
     border: 1px solid #ddd;
     padding: 12px;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .contact-form .form-control:focus {
+}
+
+.contact-form .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  }
-  
-  .contact-form button {
+}
+
+.contact-form button {
     background-color: #007bff;
     color: #fff;
     font-size: 1.1rem;
@@ -426,22 +482,89 @@ body {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .contact-form button:hover {
+}
+
+.contact-form button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .row {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .social-icons {
-      gap: 15px;
+        gap: 15px;
     }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.875rem;
   }
   
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  footer .footer-container .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  footer .footer-container .quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  footer .footer-container .quick-links li {
+    margin: 0;
+  }
+  
+  footer .footer-container .quick-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  footer .footer-container .quick-links a:hover {
+    color: #f39c12;
+    transform: translateY(-3px);
+  }
+  
+  footer .footer-container .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  footer .footer-container .social-icons a {
+    color: #bbb;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-container .social-icons a:hover {
+    color: #f39c12;
+  }
+  
+  footer .footer-container .copyright {
+    font-size: 0.75rem;
+    color: #aaa;
+  }
   
